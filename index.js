@@ -1,3 +1,17 @@
+//#region Express.js
+const express = require("express");
+const app = express();
+
+app.get("/", async (req, res) => {
+  return res.send("🚀 Up and running...");
+});
+
+app.listen(3000, () => {});
+
+//#endregion
+
+//#region Discord.js
+
 // Require the necessary discord.js classes
 const {
   Client,
@@ -91,3 +105,5 @@ client.on(Events.MessageCreate, async (interaction) => {
 
 // Log in to Discord with your client's token
 client.login(token);
+
+//#endregion
