@@ -6,7 +6,7 @@ const {
   GatewayIntentBits,
   PermissionsBitField,
 } = require("discord.js");
-const { token } = require("./config.json");
+const token = process.env.TOKEN;
 
 // Require node path and filesystem to handle commands
 const fs = require("node:fs");
